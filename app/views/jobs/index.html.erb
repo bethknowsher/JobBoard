@@ -1,4 +1,11 @@
 <h1> Job Board </h1>
 
+<ul class="jobs">
+  <% @jobs.each do |job| %>
+    <li> <%= job.title %> </li>
+    <li> <%= job.company %> </li>
+  <% end %>
+</ul>
+
 
 <%= link_to "New Job", new_job_path %>
